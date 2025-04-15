@@ -2,49 +2,49 @@
 
 ## Project Description:
 
-The goal of this project is to create a React application for task management with a dynamic form generation feature based on a UI schema provided by the user. The app will have a dual-panel layout where users can paste the UI schema (in JSON format) on the left side, and the right side will automatically render the form preview based on the schema. In addition to the form functionality, the application will allow users to create, read, update, and delete tasks while providing features like task filtering, priority assignment, and more.
+The goal of this project is to build a comprehensive Task Tracker application using ReactJS. The application is designed to help users manage their tasks effectively with features like task creation, real-time updates, filtering, categorization, and more. The user interface is split into two key components: a task input and management area, and a task display area that dynamically updates based on user interaction and data from global state.
+
+Users can create tasks with details such as title, category, and priority level. Each task can be marked as completed or active, updated, deleted, and reordered through drag-and-drop functionality. Tasks are visually categorized and color-coded based on their priority and completion status, enhancing user experience and clarity.
+
+The application follows a mobile-first responsive design, ensuring optimal user experience across devices. All task data is persisted using localStorage, so users do not lose their data on page reloads.
 
 ## Tech Stack
 
-Frontend Framework: ReactJS with functional components and hooks.
-
-State Management: Redux and Redux Toolkit for global state management.
-
-Persistence: Tasks will be stored in localStorage/IndexedDB for data persistence.
-
-Responsive Design: Mobile-first approach with responsive layouts.
+Frontend: ReactJS, JavaScript, Tailwind CSS
+State Management: Redux, Redux Toolkit
+Middleware: Redux Thunk
+Persistence: localStorage
 
 ## Features
 
-1.  Dynamic Form Generation (UI Schema)
-    Users can paste a UI schema in JSON format to dynamically generate a form.
+Features - (Task Management)
+Create new tasks with title, category, and priority level
 
-The schema includes properties like label, description, jsonKey, uiType, validate, and placeholder for different fields (text input, number, radio, etc.).
+Read and view all tasks in real-time with dynamic UI rendering
 
-The form will display advanced fields that can be toggled based on the validate property in the schema.
+Update task details and toggle their completion status
 
-2. Task Management
-   Create, Read, Update, Delete Tasks: Users can add, view, modify, and delete tasks.
+Delete individual tasks from the task list
 
-Task Status: Toggle the completion status of tasks with a simple checkbox.
+Drag-and-drop functionality for reordering tasks
 
-Filtering: Filter tasks based on status (all, completed, active).
 
-Search: Search functionality to find specific tasks using task names or categories.
+Features - (Task Display & Organization)
+Task Status Management: Toggle completion status (active/completed) for individual tasks
 
-Categories/Tags: Organize tasks with customizable categories or tags.
+Filtering: View tasks based on their status - all, active, or completed
 
-Priority Levels: Assign priority levels to tasks (low, medium, high) for easy management.
+Search Functionality: Search through tasks using task titles or keywords
 
-3. User Interface & User Experience
-   Intuitive UI: Clean, user-friendly interface for task management.
+Categories: Tag tasks with categories to organize them contextually
 
-Task Organization: Enable drag-and-drop functionality for task reordering.
+Priority Levels: Assign low, medium, or high priority to tasks and display them with visual indicators
 
-Visual Indicators: Use color-coding for task priority and completion status.
+Visual Indicators: Tasks are color-coded based on priority and status for better visual clarity
 
-4. Real-Time Updates:
-   The UI schema editor (left panel) and form preview (right panel) will synchronize in real-time as users make changes to the JSON schema.
+Responsive Design: Fully optimized for mobile, tablet, and desktop views with a mobile-first approach
+
+
 
 ## Getting Started
 
