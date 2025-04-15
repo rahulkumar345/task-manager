@@ -1,0 +1,22 @@
+{
+  "boards": [
+    {
+      "name": "Dashboard",
+      "isActive": false,
+      "columns": [
+        {
+          "name": "Todos",
+          "tasks": []
+        },
+        {
+          "name": "Active",
+          "tasks": []
+        },
+        {
+          "name": "Completed",
+          "tasks": []
+        }
+      ]
+    }
+  ]
+}
